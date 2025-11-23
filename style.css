@@ -63,7 +63,7 @@ nav ul{
 
 .bottom{
     position:sticky;
-    height:130px;
+    height:100px;
     background-color: black;
     bottom:0;
     display:flex;
@@ -109,12 +109,12 @@ nav ul{
 
 .timestamp{
     margin:0 23px;
+
 }
-.time{
-    padding-left:20px;
-}
+
 .timestamp i{
     cursor:pointer;
+    padding-left: 7px;
 }
 .songInfo{
     position:absolute;
@@ -124,6 +124,12 @@ nav ul{
 .songInfo img{
     opacity:0;
     transition:opacity 0.8s ease-in;
+    padding-top: 20px;
+}
+
+#masterSongName{
+    font-size: 1.2rem;
+    padding-left: 20px;
 }
 /*
 #gif{
