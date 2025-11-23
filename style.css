@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Mystery+Quest&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Italianno&family=Mystery+Quest&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+nav{
+    font-family: "Borel", cursive;
+}
+
+nav ul{
+    display:flex;
+    list-style-type:none;
+    height:55px;
+    gap:20px;
+    font-size: 22px;
+    background-color: black;
+    color:antiquewhite;
+    padding-top: 10px;
+    align-items:center;
+}
+/* nav ul li{
+    padding: 0 12px; 
+}*/
+.logo{
+    display:flex;
+    align-items:center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    gap:10px;
+}
+.logo img{
+    height:35px;
+    width:35px;
+    padding-left: 8px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+
+/* Main Content */
+
+
+.container{
+    min-height:70vh;
+    background-color: black;
+    color: antiquewhite;
+    font-family:"Borel", cursive;
+    display:flex;
+    width:70%;
+    margin:23px auto;
+    border-radius:12px;
+    padding:34px;
+    background-image:url('sheeran.jpg');
+    background-size: contain;
+}
+
+.bottom{
+    position:sticky;
+    height:130px;
+    background-color: black;
+    bottom:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color: antiquewhite;
+    flex-direction:column;
+}
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor:pointer;
+}
+#myProgressBar{
+    text-align: center;
+    width:80vw;
+    cursor:pointer;
+}
+
+
+.songItemContainer{
+    margin-top: 20px;
+}
+.songItem{
+     height:50px;
+     display:flex;
+     background-color: antiquewhite;
+     /* width:80%; */
+     color:black;
+     margin:12px 0;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 32px;
+}
+
+.songItem img{
+     width:45px;
+     height:30px;
+     margin:0 10px;
+     border-radius:32px;
+}
+
+.timestamp{
+    margin:0 23px;
+}
+.time{
+    padding-left:20px;
+}
+.timestamp i{
+    cursor:pointer;
+}
+.songInfo{
+    position:absolute;
+    left:10vw;
+    font-family:"Borel", cursive;
+}
+.songInfo img{
+    opacity:0;
+    transition:opacity 0.8s ease-in;
+}
+/*
+#gif{
+    display:inline-block;
+    height:80px;
+    width:40px;
+}
+*/
+@media only screen and (max-width:1100px){
+    body{
+        background-color: red;
+    }
+    .container{
+        background-repeat:no-repeat;
+    }
+}
